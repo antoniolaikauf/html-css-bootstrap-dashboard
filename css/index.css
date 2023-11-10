@@ -4,7 +4,7 @@ header{
     /* debug */
     background-color: red;
 }
-
+/* sezione main  */
 main{
     height: calc(100vh - 50px);
     /* debug */
@@ -12,14 +12,14 @@ main{
 }
 
 #pagine{
-    width: 100px;
+    width: 150px;
     height: 100%;
     /* debug */
-    background-color: black;
+    background-color: rgb(100, 85, 117);
 }
 
 #main-principale{
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     height: 100%;
     /* debug */
     background-color: orange;
@@ -28,4 +28,13 @@ main{
 main>div{
     display: flex;
     height: calc(100vh - 50px);
+}
+/* sezione pagine */
+
+#parte-superiore{
+    height: calc(100vh - 150px);
+}
+
+#parte-inferiore{
+    height: 100px;
 }

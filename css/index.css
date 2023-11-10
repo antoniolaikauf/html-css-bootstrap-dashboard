@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.items-flex>div{
+.items-flex>div , #icone {
     display: none;
 }
 /* sezione header */
@@ -90,8 +90,8 @@ main>div{
 /* dispositivi maggiori di 720 */
 
 @media all and (min-width:720px) {
-    .items-flex>div{
-        display: block;
+    .items-flex>div, #icone{
+        display: inline-block;
     }
     #pagine{
         width: 100px;

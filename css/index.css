@@ -6,10 +6,10 @@
 .items-flex{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.items-flex>div , #icone {
+#pagine .items-flex>div , #icone {
     display: none;
 }
 /* sezione header */
@@ -69,7 +69,7 @@ main>div{
 /* caratteristiche main principale */
 
 #boolean-studenti{
-    height: 100px;
+    padding: 20px 0;
     /* debug */
     background-color: azure;
 }
@@ -93,7 +93,7 @@ main>div{
 /* dispositivi maggiori di 720 */
 
 @media all and (min-width:720px) {
-    .items-flex>div, #icone{
+    #pagine .items-flex>div, #icone{
         display: inline-block;
     }
     #pagine{

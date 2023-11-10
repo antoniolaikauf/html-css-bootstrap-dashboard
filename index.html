@@ -101,14 +101,65 @@
             <div id="boolean-studenti">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-5">
-                            testo
+                        <div class="col-12 col-sm-4 order-sm-3">
+                            <span>sono testo</span>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                Link with href
+                              </a>
+                              
+                              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                  <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                  </div>
+                                  <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                      Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            
                         </div>
-                        <div class="col-12 col-sm-3">
-                            testo
+                        <div class="col-12 col-sm-5 order-sm-1">
+                           <div class="items-flex">
+                            <h2>boolean</h2>
+                            <div class="progress" >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div>                              
+                           </div>
+                           <div class="items-flex">
+                            <div class="progress " >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div> 
+                              <i class="fa-solid fa-angles-right"></i>
+                              <div class="progress d-sm-none " >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div> 
+                              <div class="progress d-none d-sm-block " >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div> 
+                              <div class="progress d-none d-sm-block" >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div> 
+                              <div class="progress d-none d-sm-block" >
+                                <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">hdjdkdd</div>
+                              </div> 
+
+                           </div>
                         </div>
-                        <div class="col-12 col-sm-3">
-                            testo
+                        <div class="col-12 col-sm-3 order-sm-2">
+                            <div>testo jdjdjd</div>
+                            <div>7655</div>
                         </div>
                     </div>
                 </div>
@@ -198,38 +249,36 @@
                         <div class="col-12 col-md-4">                         
                             <div id="todo">
                                 <h3>titolo</h3>
-                                <div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Default checkbox
-                                        </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                          Checked checkbox
-                                        </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Default checkbox
-                                        </label>
-                                      </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      First checkbox
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Second checkbox
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Third checkbox
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
-                            </div>
-                            <div id="grafico">
-                                <img src="img/stats.jpeg" alt="">
-                                <h4>titolo</h4>
-                                <div>sono testo</div>
-                                <ul>
-                                    <li>lista</li>
-                                    <li>lista</li>
-                                    <li>lista</li>
-                                    <li>mettere link</li>
-                                </ul>        
-                            </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a href="#" class="card-link">Card link</a>
+                                </div>
+                              </div>
                         </div>
                     </div>
                </div>

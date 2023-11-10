@@ -12,12 +12,20 @@
 .items-flex>div{
     display: none;
 }
-
-/* debug */
+/* sezione header */
 header{
     height: 50px;
+    padding: 3px 0;
     /* debug */
     background-color: red;
+}
+
+header img{
+    width: 100%;
+}
+
+header .progress{
+    height: 100%;
 }
 /* sezione main  */
 main{

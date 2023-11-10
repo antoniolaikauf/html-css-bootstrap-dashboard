@@ -14,21 +14,47 @@
 <body>
     <!-- inizio header -->
     <header>
-       <div class="container-fluid">
+       <nav class="container-fluid">
             <div class="row">
-                <div class="col-2">
+                <!-- <div class="col-2 m-0 p-0 bg-white">
                     <div>
-                        qua ci va immagine
+                        <img src="img/logo.svg" alt="">
                     </div>
                 </div>
-                <div class="col-8">
-                    qua ci va input prendere da boot se si riesce 
+                <div class="col-8 m-0 p-0">
+                    <div class="input-group flex-nowrap progress">
+                        <span class="input-group-text " id="addon-wrapping">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 m-0 p-0 bg-white">
                     qua ci va icone 
-                </div>
+                </div> -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"> 
+                        <div>
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                    </span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">
+                        <div class="dropdown">
+                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-bell"></i>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </span>
+                  </div>
             </div>
-       </div>
+        </nav>
     </header>
     <!-- inizio main -->
     <main>

@@ -18,15 +18,22 @@ header{
     padding: 3px 0;
     /* debug */
     background-color: red;
+    display: flex;
+    align-items: center;
 }
 
 header img{
-    width: 100%;
+    width: 30px;
 }
 
-header .progress{
-    height: 100%;
+#logo-nascosto{
+    display: none;
 }
+
+nav{
+    background-color: aqua;
+}
+
 /* sezione main  */
 main{
     height: calc(100vh - 50px);
@@ -104,5 +111,12 @@ main>div{
     }
     .items-flex{
         justify-content:left;
+    }
+    #nascondi{
+        display: none;
+    }
+    #logo-nascosto{
+        display: block;
+        width: 100%;
     }
 }

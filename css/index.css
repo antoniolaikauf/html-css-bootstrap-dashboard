@@ -21,6 +21,7 @@ main{
 #main-principale{
     width: calc(100% - 150px);
     height: 100%;
+    overflow: auto;
     /* debug */
     background-color: orange;
 }
@@ -37,4 +38,24 @@ main>div{
 
 #parte-inferiore{
     height: 100px;
+}
+/* caratteristiche main principale */
+
+#boolean-studenti{
+    height: 100px;
+    /* debug */
+    background-color: azure;
+}
+/* caratteristiche classi */
+
+#classi-successive{
+    /* debug */
+    height: 300px;
+    background-color: bisque;
+}
+
+#todo{
+    /* debug */
+    height: 300px;
+    background-color: brown;
 }

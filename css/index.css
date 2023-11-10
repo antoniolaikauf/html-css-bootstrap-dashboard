@@ -76,15 +76,18 @@ main>div{
 /* caratteristiche classi */
 
 #classi-successive{
-    /* debug */
-    height: 300px;
-    background-color: bisque;
+ /* debug */
+ background-color: rgb(27, 136, 136);
 }
 
-#todo{
+#todo, #grafico{
     /* debug */
-    height: 300px;
     background-color: brown;
+    margin-bottom: 20px;
+}
+
+#grafico img{
+    width: 100%;
 }
 
 /* dispositivi maggiori di 720 */

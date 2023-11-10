@@ -1,3 +1,18 @@
+:root{
+    font-size: 12px;
+}
+
+/* items flex */
+.items-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-flex>div{
+    display: none;
+}
+
 /* debug */
 header{
     height: 50px;
@@ -12,14 +27,14 @@ main{
 }
 
 #pagine{
-    width: 150px;
+    width: 40px;
     height: 100%;
     /* debug */
     background-color: rgb(100, 85, 117);
 }
 
 #main-principale{
-    width: calc(100% - 150px);
+    width: calc(100% - 40px);
     height: 100%;
     overflow: auto;
     /* debug */
@@ -34,10 +49,14 @@ main>div{
 
 #parte-superiore{
     height: calc(100vh - 150px);
+    text-align: center;
 }
 
 #parte-inferiore{
     height: 100px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
 }
 /* caratteristiche main principale */
 
@@ -58,4 +77,21 @@ main>div{
     /* debug */
     height: 300px;
     background-color: brown;
+}
+
+/* dispositivi maggiori di 720 */
+
+@media all and (min-width:720px) {
+    .items-flex>div{
+        display: block;
+    }
+    #pagine{
+        width: 100px;
+    }
+    #main-principale{
+        width: calc(100% - 100px);
+    }
+    .items-flex{
+        justify-content:left;
+    }
 }

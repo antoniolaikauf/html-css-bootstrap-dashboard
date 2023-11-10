@@ -1,0 +1,31 @@
+/* debug */
+header{
+    height: 50px;
+    /* debug */
+    background-color: red;
+}
+
+main{
+    height: calc(100vh - 50px);
+    /* debug */
+    background-color: aqua;
+}
+
+#pagine{
+    width: 100px;
+    height: 100%;
+    /* debug */
+    background-color: black;
+}
+
+#main-principale{
+    width: calc(100% - 100px);
+    height: 100%;
+    /* debug */
+    background-color: orange;
+}
+
+main>div{
+    display: flex;
+    height: calc(100vh - 50px);
+}

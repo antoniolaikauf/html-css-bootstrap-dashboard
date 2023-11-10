@@ -92,7 +92,7 @@ main>div{
 
 /* dispositivi maggiori di 720 */
 
-@media all and (min-width:720px) {
+@media all and (min-width:768px) {
     #pagine .items-flex>div, #icone{
         display: inline-block;
     }

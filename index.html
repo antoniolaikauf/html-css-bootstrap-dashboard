@@ -17,12 +17,12 @@
        <div class="container-fluid p-0 m-0">
             <div class="row m-0">
               <div class="col p-0">
-                <div class="input-group ">
+                <div class="input-group "> <!--codice preso da bootstrap-->
                     <span class="input-group-text">
-                        <img src="img/mobile-logo.png" alt="" id="nascondi">
-                        <img src="img/logo.svg" alt="" id="logo-nascosto">
+                        <img src="img/mobile-logo.png" alt="immagine logo" id="nascondi">
+                        <img src="img/logo.svg" alt="immagine logo" id="logo-nascosto">
                     </span>
-                    <input type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)" placeholder="prova a cercare : lezione di ravarel">
+                    <input type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)" placeholder="prova a cercare &#58; lezione di ravarel">
                     <span class="input-group-text">
                         <span id="icone">
                               <i class="fa-solid fa-bars"></i>
@@ -32,7 +32,7 @@
                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
                              <i class="fa-solid fa-bell"></i>
                          </button>
-                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"> <!--menu nascosto -->
                            <li><a class="dropdown-item" href="#">profilo </a></li>
                            <li><a class="dropdown-item" href="#">fatturazione</a></li>
                            <li><a class="dropdown-item" href="#">logout</a></li>
@@ -46,7 +46,7 @@
     <!-- inizio main -->
     <main>
       <div>
-        <section id="pagine">
+        <section id="pagine"> <!--seione pagine per utente -->
           <div class="container-fluid">
             <div class="row">
                 <div id="parte-superiore">
@@ -80,8 +80,8 @@
             </div>
         </div>
         </section>
-        <section id="main-principale">
-            <div id="boolean-studenti">
+        <section id="main-principale"> <!--main principale della pagine -->
+            <div id="boolean-studenti"> <!--studenti attuali in boolean -->
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-sm-4 order-sm-3 text-md-center my-2">
@@ -89,124 +89,126 @@
                             <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                               <i class="fa-solid fa-plus"></i>
                             </a>                  
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div class="offcanvas-header">
-                                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">insrerisci un nuovo studente </h5>
-                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body p-0">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                  <label for="name" class="form-label">name</label>
-                                                  <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
-                                                  <div id="emailHelp" class="form-text"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                  <label for="surname" class="form-label">surname</label>
-                                                  <input type="email" class="form-control" id="surname" aria-describedby="emailHelp">
-                                                  <div id="emailHelp" class="form-text"></div>
-                                                </div>
-                                            </div>
-                                          </div>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> <!--codice preso da bootstrap e dati di iscrizione di un utente-->
+                                <form action="" method="get">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">insrerisci un nuovo studente </h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body p-0"> <!--compilazione dell utente -->
+                                      <div class="container-fluid">
                                           <div class="row">
                                               <div class="col-6">
-                                                <label class="form-label">email</label>
+                                                  <div class="mb-3">
+                                                    <label for="name" class="form-label">name</label>
+                                                    <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="surname" class="form-label">surname</label>
+                                                    <input type="email" class="form-control" id="surname" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                  <label class="form-label">email</label>
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">&#64;</span>
+                                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                  </div>
+                                                </div>
+                                                <div class="col-6">
+                                                  <label for="password" class="form-label">password</label>
+                                                    <input type="email" class="form-control" id="password" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-6">
+                                                <label class="form-label">indirizzo email</label>
                                                 <div class="input-group mb-3">
-                                                  <span class="input-group-text">@</span>
+                                                  <span class="input-group-text">&#64;</span>
                                                   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
                                               </div>
                                               <div class="col-6">
-                                                <label for="password" class="form-label">password</label>
-                                                  <input type="email" class="form-control" id="password" aria-describedby="emailHelp">
+                                                <label for="password2" class="form-label">password</label>
+                                                  <input type="email" class="form-control" id="password2" aria-describedby="emailHelp">
                                                   <div id="emailHelp" class="form-text"></div>
                                               </div>
                                           </div>
                                           <div class="row">
-                                            <div class="col-6">
-                                              <label class="form-label">indirizzo email</label>
-                                              <div class="input-group mb-3">
-                                                <span class="input-group-text">@</span>
-                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="indirizzo" class="form-label">indirizzo</label>
+                                                  <input type="email" class="form-control" id="indirizzo" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                                </div>
                                               </div>
-                                            </div>
-                                            <div class="col-6">
-                                              <label for="password2" class="form-label">password</label>
-                                                <input type="email" class="form-control" id="password2" aria-describedby="emailHelp">
-                                                <div id="emailHelp" class="form-text"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="citta" class="form-label">citta</label>
+                                                    <input type="email" class="form-control" id="citta" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-4">
+                                                  <label for="stato" class="form-label">stato</label>
+                                                  <div class="input-group mb-3">
+                                                    <select class="form-select" id="stato">
+                                                      <option selected>Choose...</option>
+                                                      <option value="1">One</option>
+                                                      <option value="2">Two</option>
+                                                      <option value="3">Three</option>
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                              <div class="col-2">
+                                                  <div class="mb-3">
+                                                    <label for="cap" class="form-label">CAP</label>
+                                                    <input type="email" class="form-control" id="cap" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
                                             <div class="col-12">
-                                              <div class="mb-3">
-                                                <label for="indirizzo" class="form-label">indirizzo</label>
-                                                <input type="email" class="form-control" id="indirizzo" aria-describedby="emailHelp">
-                                                <div id="emailHelp" class="form-text"></div>
+                                              <label for="foto" class="form-label">foto</label>
+                                              <div class="input-group mb-3">
+                                                <input type="file" class="form-control" id="foto">
                                               </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                  <label for="citta" class="form-label">citta</label>
-                                                  <input type="email" class="form-control" id="citta" aria-describedby="emailHelp">
-                                                  <div id="emailHelp" class="form-text"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <label for="stato" class="form-label">stato</label>
-                                                <div class="input-group mb-3">
-                                                  <select class="form-select" id="stato">
-                                                    <option selected>Choose...</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-2">
-                                                <div class="mb-3">
-                                                  <label for="cap" class="form-label">CAP</label>
-                                                  <input type="email" class="form-control" id="cap" aria-describedby="emailHelp">
-                                                  <div id="emailHelp" class="form-text"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-12">
-                                            <label for="foto" class="form-label">foto</label>
-                                            <div class="input-group mb-3">
-                                              <input type="file" class="form-control" id="foto">
+                                          </div>
+                                          <div class="row">
+                                            <div class="col mb-2">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  seleziona per proseguire
+                                                </label>
+                                              </div>
                                             </div>
                                           </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col mb-2">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                              <label class="form-check-label" for="flexCheckDefault">
-                                                seleziona per proseguire
-                                              </label>
+                                          <div class="row">
+                                            <div class="col-12">
+                                              <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                                <button type="button" class="btn btn-primary me-2">salva</button>
+                                                <button type="button" class="btn btn-warning">svuota</button>
+                                              </div>
                                             </div>
                                           </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-12">
-                                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                              <button type="button" class="btn btn-primary me-2">salva</button>
-                                              <button type="button" class="btn btn-warning">svuota</button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                      </div>
+                                  </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-5 order-sm-1 my-2">
+                        <div class="col-12 col-sm-5 order-sm-1 my-2"> <!--applicazione boolean -->
                            <div class="items-flex">
                               <h2>boolean</h2>
                               <div class="progress p-1 mx-1 bg-colore" >
@@ -232,21 +234,21 @@
                               </div> 
                            </div>
                         </div>
-                        <div class="col-12 col-sm-3 order-sm-2 my-2">
+                        <div class="col-12 col-sm-3 order-sm-2 my-2"> <!--studenti online negli  ultimi minuti -->
                             <div>studenti online negli aultimi 30 minuti</div>
                             <div id="numero-persone">125</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="classi">
+            <div id="classi"> <!--inizio descrizioni di tutte le classi-->
                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-8"> <!--tutte le classi e faq per studenti -->
                             <div id="classi-successive">
                               <h3>prossime classi</h3>
                                   <div>
-                                    <table class="table">
+                                    <table class="table"> <!--inizio tabella con dentro tutte le classi-->
                                       <thead>
                                         <tr>
                                           <th class="col-9 col-sm-6">nome</th>
@@ -259,11 +261,11 @@
                                       <tbody>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 75
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">15 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block done">
                                               <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" ><span>done</span></div>
@@ -281,11 +283,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 76
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">16 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block done">
                                               <div class="progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -303,11 +305,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 77
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">17 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block process" >
                                               <div class="progress-bar process" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -325,11 +327,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 78
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">18 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block done" >
                                               <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -347,11 +349,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 79
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">19 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block failed" >
                                               <div class="progress-bar " role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -369,11 +371,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 80
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">20 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block done" >
                                               <div class="progress-bar " role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -391,11 +393,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 81
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">21 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block failed" >
                                               <div class="progress-bar " role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -413,11 +415,11 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">
-                                            <img src="img/class-avatar.jpg" alt="">
+                                            <img src="img/class-avatar.jpg" alt="immagine code">
                                             classe 82
                                           </th>
                                           <td class="d-none d-sm-table-cell text-center">22 febbraio 2021</td>
-                                          <td class="d-none d-sm-table-cell">20%r</td>
+                                          <td class="d-none d-sm-table-cell">20&#37;</td>
                                           <td>
                                             <div class="progress p-1 d-inline-block done" >
                                               <div class="progress-bar" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>done</span></div>
@@ -437,7 +439,7 @@
                                     </table>
                                   </div>
                             </div>
-                            <div id="faq">
+                            <div id="faq"> <!--faq per studenti-->
                               <h3>F.A.Q </h3>
                               <div class="accordion" id="accordionExample">
                                     <div class="accordion-item">
@@ -480,7 +482,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4">                         
-                            <div id="todo">
+                            <div id="todo"> <!--todo list con punti  da checkare-->
                                 <h3>todo</h3>
                                 <ul class="list-group p-3">
                                     <li class="list-group-item">
@@ -489,7 +491,7 @@
                                     </li>
                                     <li class="list-group-item">
                                       <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                     lezzione su bootstrap 5 is classe #75
+                                     lezzione su bootstrap 5 is classe &#35;75
                                     </li>
                                     <li class="list-group-item">
                                       <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
@@ -497,17 +499,17 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div id="grafico">
+                            <div id="grafico"> <!--statistiche mesi-->
                               <div class="card">
-                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="immagine grafico">
                                 <div class="card-body">
                                   <h5 class="card-title">utenti attivi</h5>
                                   <p class="card-text">lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">gennaio :1200</li>
-                                  <li class="list-group-item">febbraio:800</li>
-                                  <li class="list-group-item">marzo:1500</li>
+                                  <li class="list-group-item">gennaio&#58;1200</li>
+                                  <li class="list-group-item">febbraio&#58;800</li>
+                                  <li class="list-group-item">marzo&#58;1500</li>
                                 </ul>
                                 <div class="card-body">
                                   <a href="#" class="card-link">visualizza report approfondimento</a>
@@ -525,6 +527,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!-- per quando riprendi mettere testo sistemare gli elementi con padding e margin aggiungere colore e vedere se si riesce a togliere un po di css e 
-mettere piu cose possibili da bootstrap -->

@@ -123,6 +123,10 @@ main .progress{
     color: black;
     text-align: left;
 }
+
+#boolean-studenti .offcanvas-end{
+    width: 100%;
+}
 /* caratteristiche classi */
 #classi-successive, #faq, #todo, #grafico{
     border: 1px solid black;
@@ -191,6 +195,9 @@ table img{
     #logo-nascosto{
         display: block;
         width: 100%;
+    }
+    #boolean-studenti .offcanvas-end{
+        width: 50%;
     }
 }
 

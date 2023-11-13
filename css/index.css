@@ -21,9 +21,26 @@ header{
     height: 50px;
     padding: 3px 0;
     /* debug */
-    background-color: red;
+    background-color: #f8f9fa;
     display: flex;
     align-items: center;
+}
+
+.fa-bell{
+    color: yellow;
+}
+
+header .input-group-text{
+    background-color: white;
+}
+
+header .form-control{
+    background-color: #e5e5e5;
+    font-size: 13px;
+}
+
+#icone i{
+    margin: 0px 5px;
 }
 
 header img{
@@ -34,9 +51,6 @@ header img{
     display: none;
 }
 
-nav{
-    background-color: aqua;
-}
 
 /* sezione main  */
 main{
@@ -44,11 +58,24 @@ main{
     /* debug */
 }
 
+main .btn-outline-primary {
+    color: black;
+    border-color: black;
+}
+
+main .bg-colore{
+background-color: #165bba;
+}
+
 main .progress{
     height: unset;
 }
 
-table .progress-bar{
+#boolean-studenti .btn-primary{
+    border-color: black;
+}
+
+main .progress-bar{
     background-color: unset;
 }
 
@@ -64,17 +91,20 @@ main .failed{
     background-color: red;
 }
 
-th i{
-    padding: 10px;
-    border-radius: 50%;
-    background-color: red;
+table img{
+    width: 8%;
 }
 
 #pagine{
     width: 40px;
     height: 100%;
-    /* debug */
-    background-color: rgb(100, 85, 117);
+    color: white;
+    background: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+}
+
+#pagine i{
+    margin-right: 5px;
 }
 
 #main-principale{
@@ -106,14 +136,13 @@ main>div{
 
 #boolean-studenti{
     padding: 20px 0;
+    color: white;
     /* debug */
-    background-color: azure;
+    background-color:#1b72e8;
 }
 /* caratteristiche classi */
 
 #todo, #grafico{
-    /* debug */
-    background-color: brown;
     margin-bottom: 20px;
 }
 

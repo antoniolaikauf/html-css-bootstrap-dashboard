@@ -13,23 +13,18 @@
     justify-content: left;
 }
 
-#pagine .items-flex>div , #icone {
+#pagine .items-flex>div, #icone  {
     display: none;
 }
 /* sezione header */
 header{
     height: 50px;
     padding: 3px 0;
-    /* debug */
     background-color: #f8f9fa;
     display: flex;
     align-items: center;
 }
-
-.fa-bell{
-    color: yellow;
-}
-
+/* carratteristiche barra di ricerca dentro header */
 header .input-group-text{
     background-color: white;
     border: unset;
@@ -39,11 +34,15 @@ header .form-control{
     background-color: #e5e5e5;
     font-size: 13px;
 }
+/* caratteristiche icone  */
+.fa-bell{
+    color: yellow;
+}
 
 #icone i{
     margin: 0px 5px;
 }
-
+/* caratteristiche immagini logo */
 header img{
     width: 30px;
 }
@@ -51,55 +50,16 @@ header img{
 #logo-nascosto{
     display: none;
 }
-
-
 /* sezione main  */
 main{
     height: calc(100vh - 50px);
-    /* debug */
 }
 
-main .btn-outline-primary {
-    color: black;
-    border-color: black;
+main>div{
+    display: flex;
+    height: calc(100vh - 50px);
 }
-
-main .bg-colore{
-background-color: #165bba;
-}
-
-#numero-persone{
-    font-size: 30px;
-}
-
-main .progress{
-    height: unset;
-}
-
-#boolean-studenti .btn-primary{
-    border-color: black;
-}
-
-main .progress-bar{
-    background-color: unset;
-}
-
-main .done{
-    background-color: green;
-}
-
-main .process{
-    background-color: yellow;
-}
-
-main .failed{
-    background-color: red;
-}
-
-table img{
-    width: 8%;
-}
-
+/* caratteristche main pagine */
 #pagine{
     width: 40px;
     height: 100%;
@@ -107,44 +67,6 @@ table img{
     background: url(../img/sidebar-bg.png);
     background-color: #051e34;
 }
-
-#pagine i{
-    margin-right: 5px;
-}
-
-#main-principale{
-    width: calc(100% - 40px);
-    height: 100%;
-    overflow: auto;
-    /* debug */
-  
-}
-
-#grafico{
-    padding: 1rem;
-}
-
-main>div{
-    display: flex;
-    height: calc(100vh - 50px);
-}
-
-#classi-successive, #faq, #todo, #grafico{
-    border: 1px solid black;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-#classi-successive h3, #faq h3, #todo h3{
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-}
-
-#classi-successive>div{
-    padding: 10px;
-}
-/* sezione pagine */
 
 #parte-superiore{
     height: calc(100vh - 150px);
@@ -157,26 +79,94 @@ main>div{
     align-items: end;
     padding-bottom: 20px;
 }
-/* caratteristiche main principale */
 
+#pagine i{
+    margin-right: 5px;
+}
+/* caratteristiche main-principale */
+#main-principale{
+    width: calc(100% - 40px);
+    height: 100%;
+    overflow: auto;
+}
+/* classi dentro main che sono da bootstrap */
+main .progress-bar{
+    background-color: unset;
+}
+
+main .progress{
+    height: unset;
+}
+/* caratteristiche boolean studenti  */
 #boolean-studenti{
     padding: 20px 0;
     color: white;
-    /* debug */
     background-color:#1b72e8;
 }
-/* caratteristiche classi */
 
-#todo, #grafico{
-    margin-bottom: 20px;
+#numero-persone{
+    font-size: 30px;
+}
+/* classi dentro booleanstudenti che sono da bootstrap */
+#boolean-studenti .btn-primary{
+    border-color: black;
 }
 
+#boolean-studenti .bg-colore{
+    background-color: #165bba;
+}
+
+#boolean-studenti .offcanvas{
+    color: black;
+    text-align: left;
+}
+/* caratteristiche classi */
+#classi-successive, #faq, #todo, #grafico{
+    border: 1px solid black;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#classi-successive h3, #faq h3, #todo h3{
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid black;
+}
+/* caratteristiche classi successive  */
+#classi-successive .btn-outline-primary {
+    color: black;
+    border-color: black;
+}
+
+#classi-successive .done{
+    background-color: green;
+}
+
+#classi-successive .process{
+    background-color: yellow;
+}
+
+#classi-successive .failed{
+    background-color: red;
+}
+
+#classi-successive>div{
+    padding: 10px;
+}
+
+table img{
+    width: 30px;
+}
+/* caratteristiche grafico  */
 #grafico img{
     width: 100%;
 }
 
+#grafico{
+    padding: 1rem;
+}
 /* dispositivi maggiori di 720 */
-
 @media all and (min-width:768px) {
     #pagine .items-flex>div, #icone{
         display: inline-block;
@@ -185,11 +175,9 @@ main>div{
         width: 100px;
     }
     #main-principale{
-        width: calc(100% - 100px);
+        flex-grow: 1;
     }
-    /* .items-flex{
-        justify-content:left;
-    } */
+    /* caratteristiche loghi dentro header */
     #nascondi{
         display: none;
     }

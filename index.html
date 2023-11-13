@@ -16,32 +16,30 @@
     <header>
        <div class="container-fluid p-0 m-0">
             <div class="row m-0">
-                    <div class="col p-0">
-                        <div class="input-group ">
-                            <span class="input-group-text">
-                                <img src="img/mobile-logo.png" alt="" id="nascondi">
-                                <img src="img/logo.svg" alt="" id="logo-nascosto">
-                            </span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="prova a cercare : lezione di ravarel">
-                            <span class="input-group-text">
-                                <span id="icone">
-                                      <i class="fa-solid fa-bars"></i>
-                                      <i class="fa-solid fa-circle-question"></i>
-                                     <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </span>
-                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
-                                     <i class="fa-solid fa-bell"></i>
-                                 </button>
-                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                   <li><a class="dropdown-item" href="#">profilo </a></li>
-                                   <li><a class="dropdown-item" href="#">fatturazione</a></li>
-                                   <li><a class="dropdown-item" href="#">logout</a></li>
-                                 </ul>
-                               </div>
-                            </span>
-                        </div>
-                    </div>
-                    
+              <div class="col p-0">
+                <div class="input-group ">
+                    <span class="input-group-text">
+                        <img src="img/mobile-logo.png" alt="" id="nascondi">
+                        <img src="img/logo.svg" alt="" id="logo-nascosto">
+                    </span>
+                    <input type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)" placeholder="prova a cercare : lezione di ravarel">
+                    <span class="input-group-text">
+                        <span id="icone">
+                              <i class="fa-solid fa-bars"></i>
+                              <i class="fa-solid fa-circle-question"></i>
+                             <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </span>
+                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                             <i class="fa-solid fa-bell"></i>
+                         </button>
+                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">profilo </a></li>
+                           <li><a class="dropdown-item" href="#">fatturazione</a></li>
+                           <li><a class="dropdown-item" href="#">logout</a></li>
+                         </ul>
+                       </div>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
@@ -49,73 +47,166 @@
     <main>
       <div>
         <section id="pagine">
-            <div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div id="parte-superiore">
-                            <div class="col-12 my-2">
-                                <div class="items-flex">
-                                    <i class="fa-solid fa-house"></i>
-                                    <div>home</div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2">
-                                <div class="items-flex">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                    <div>stats</div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2"> 
-                                <div class="items-flex">
-                                    <i class="fa-solid fa-signal"></i>
-                                    <div>signals</div>
-                                </div>
-                            </div>
+          <div class="container-fluid">
+            <div class="row">
+                <div id="parte-superiore">
+                    <div class="col-12 my-2">
+                        <div class="items-flex">
+                            <i class="fa-solid fa-house"></i>
+                            <div>home</div>
                         </div>
-                        <div id="parte-inferiore">
-                            <div class="col-12"> 
-                                <div class="items-flex">
-                                    <i class="fa-solid fa-gear"></i>
-                                    <div>admin</div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <div class="items-flex">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <div>stats</div>
+                        </div>
+                    </div>
+                    <div class="col-12 my-2"> 
+                        <div class="items-flex">
+                            <i class="fa-solid fa-signal"></i>
+                            <div>signals</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="parte-inferiore">
+                    <div class="col-12"> 
+                        <div class="items-flex">
+                            <i class="fa-solid fa-gear"></i>
+                            <div>admin</div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <section id="main-principale">
             <div id="boolean-studenti">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-4 order-sm-3 text-md-center">
+                        <div class="col-12 col-sm-4 order-sm-3 text-md-center my-2">
                             <span>nuovo studente </span>
-                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                  <i class="fa-solid fa-plus"></i>
-                                </a>                  
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                  <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                  </div>
-                                  <div class="offcanvas-body">
-                                    <div>
-                                      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                    </div>
-                                    <div class="dropdown mt-3">
-                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                        Dropdown button
-                                      </button>
-                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                      </ul>
-                                    </div>
-                                  </div>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                              <i class="fa-solid fa-plus"></i>
+                            </a>                  
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">insrerisci un nuovo studente </h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="name" class="form-label">name</label>
+                                                  <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="surname" class="form-label">surname</label>
+                                                  <input type="email" class="form-control" id="surname" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-6">
+                                                <label class="form-label">email</label>
+                                                <div class="input-group mb-3">
+                                                  <span class="input-group-text">@</span>
+                                                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <label for="password" class="form-label">password</label>
+                                                  <input type="email" class="form-control" id="password" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-6">
+                                              <label class="form-label">indirizzo email</label>
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                              </div>
+                                            </div>
+                                            <div class="col-6">
+                                              <label for="password2" class="form-label">password</label>
+                                                <input type="email" class="form-control" id="password2" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                              <div class="mb-3">
+                                                <label for="indirizzo" class="form-label">indirizzo</label>
+                                                <input type="email" class="form-control" id="indirizzo" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text"></div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="citta" class="form-label">citta</label>
+                                                  <input type="email" class="form-control" id="citta" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="stato" class="form-label">stato</label>
+                                                <div class="input-group mb-3">
+                                                  <select class="form-select" id="stato">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="mb-3">
+                                                  <label for="cap" class="form-label">CAP</label>
+                                                  <input type="email" class="form-control" id="cap" aria-describedby="emailHelp">
+                                                  <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <label for="foto" class="form-label">foto</label>
+                                            <div class="input-group mb-3">
+                                              <input type="file" class="form-control" id="foto">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col mb-2">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                              <label class="form-check-label" for="flexCheckDefault">
+                                                seleziona per proseguire
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                              <button type="button" class="btn btn-primary me-2">salva</button>
+                                              <button type="button" class="btn btn-warning">svuota</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-5 order-sm-1">
+                        <div class="col-12 col-sm-5 order-sm-1 my-2">
                            <div class="items-flex">
                               <h2>boolean</h2>
                               <div class="progress p-1 mx-1 bg-colore" >
@@ -141,7 +232,7 @@
                               </div> 
                            </div>
                         </div>
-                        <div class="col-12 col-sm-3 order-sm-2">
+                        <div class="col-12 col-sm-3 order-sm-2 my-2">
                             <div>studenti online negli aultimi 30 minuti</div>
                             <div id="numero-persone">125</div>
                         </div>
@@ -183,8 +274,8 @@
                                               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                                               <label class="btn btn-outline-primary" for="btnradio1"><i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1-1" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio1-1"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -202,11 +293,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                            <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                                            <label class="btn btn-outline-primary" for="btnradio2"> <i class="fa-solid fa-pencil"></i></label>
                                           
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                            <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2-2" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradio2-2"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -224,11 +315,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio3"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3-3" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio3-3"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -246,11 +337,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio4"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio4-4" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio4-4"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -268,11 +359,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio5"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio5-5" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio5-5"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -290,11 +381,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio6"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio6-6" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio6-6"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -312,11 +403,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio7"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio7-7" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio7-7"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -334,11 +425,11 @@
                                           </td>
                                           <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                              <label class="btn btn-outline-primary" for="btnradio1"> <i class="fa-solid fa-pencil"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio8"> <i class="fa-solid fa-pencil"></i></label>
                                             
-                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                              <label class="btn btn-outline-primary" for="btnradio2"><i class="fa-solid fa-trash"></i></label>
+                                              <input type="radio" class="btn-check" name="btnradio" id="btnradio8-8" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio8-8"><i class="fa-solid fa-trash"></i></label>
                                             </div>
                                           </td>
                                         </tr>
@@ -386,7 +477,7 @@
                                     </div>
                                     </div>
                               </div>
-                          </div>
+                            </div>
                         </div>
                         <div class="col-12 col-md-4">                         
                             <div id="todo">

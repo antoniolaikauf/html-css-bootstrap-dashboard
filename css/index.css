@@ -32,6 +32,7 @@ header{
 
 header .input-group-text{
     background-color: white;
+    border: unset;
 }
 
 header .form-control{
@@ -65,6 +66,10 @@ main .btn-outline-primary {
 
 main .bg-colore{
 background-color: #165bba;
+}
+
+#numero-persone{
+    font-size: 30px;
 }
 
 main .progress{
@@ -115,9 +120,29 @@ table img{
   
 }
 
+#grafico{
+    padding: 1rem;
+}
+
 main>div{
     display: flex;
     height: calc(100vh - 50px);
+}
+
+#classi-successive, #faq, #todo, #grafico{
+    border: 1px solid black;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#classi-successive h3, #faq h3, #todo h3{
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+#classi-successive>div{
+    padding: 10px;
 }
 /* sezione pagine */
 

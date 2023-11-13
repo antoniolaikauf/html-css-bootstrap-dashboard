@@ -1,7 +1,6 @@
 :root{
     font-size: 12px;
 }
-
 /* items flex */
 .items-flex{
     display: flex;
@@ -36,7 +35,7 @@ header .form-control{
 }
 /* caratteristiche icone  */
 .fa-bell{
-    color: yellow;
+    color: #ffc010;
 }
 
 #icone i{
@@ -82,6 +81,10 @@ main>div{
 
 #pagine i{
     margin-right: 5px;
+}
+/* caratteristiche hover pagine */
+#pagine .items-flex:hover{
+    background-color: rgba(255, 255, 255, 0.216);
 }
 /* caratteristiche main-principale */
 #main-principale{
@@ -144,7 +147,7 @@ main .progress{
 }
 
 #classi-successive .process{
-    background-color: yellow;
+    background-color: #ffc010;
 }
 
 #classi-successive .failed{
@@ -157,6 +160,10 @@ main .progress{
 
 table img{
     width: 30px;
+}
+/* caratteristiche hovef tabella */
+#classi tbody>tr:hover{
+    background-color: rgba(0, 0, 0, 0.358);
 }
 /* caratteristiche grafico  */
 #grafico img{
@@ -186,3 +193,4 @@ table img{
         width: 100%;
     }
 }
+

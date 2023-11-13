@@ -6,7 +6,11 @@
 .items-flex{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+}
+
+#main-principale .items-flex{
+    justify-content: left;
 }
 
 #pagine .items-flex>div , #icone {
@@ -38,7 +42,32 @@ nav{
 main{
     height: calc(100vh - 50px);
     /* debug */
-    background-color: aqua;
+}
+
+main .progress{
+    height: unset;
+}
+
+table .progress-bar{
+    background-color: unset;
+}
+
+main .done{
+    background-color: green;
+}
+
+main .process{
+    background-color: yellow;
+}
+
+main .failed{
+    background-color: red;
+}
+
+th i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 #pagine{
@@ -53,7 +82,7 @@ main{
     height: 100%;
     overflow: auto;
     /* debug */
-    background-color: orange;
+  
 }
 
 main>div{
@@ -82,11 +111,6 @@ main>div{
 }
 /* caratteristiche classi */
 
-#classi-successive{
- /* debug */
- background-color: rgb(27, 136, 136);
-}
-
 #todo, #grafico{
     /* debug */
     background-color: brown;
@@ -109,9 +133,9 @@ main>div{
     #main-principale{
         width: calc(100% - 100px);
     }
-    .items-flex{
+    /* .items-flex{
         justify-content:left;
-    }
+    } */
     #nascondi{
         display: none;
     }
